@@ -11,4 +11,11 @@ reference compressor for the [256 challenge](https://github.com/birlug/256).
   time         14.7s
 ```
 
+## phases
+
+1. split the file into chunks after the `UNCLEJACKIE` header
+2. transform payloads (see hint 3 in the [256 challenge readme](https://github.com/birlug/256/blob/master/docs/README.md))
+3. reconstruct what we can from structure: math sequences, images, waves, prngs, and the rest
+4. compress anything left with lzma
+
 the source could be minified for a better score, but this repo keeps it readable and maintainable instead.
